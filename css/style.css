@@ -11,6 +11,59 @@ body {
     background-color: antiquewhite;
 }
 
+.container {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(114, 39, 62);
+    margin: 2rem auto;
+}
+
+.container > div {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#red{
+    background-color:rosybrown;
+    border-color: rosybrown;
+    position: relative;
+    top: -45px;
+    animation: rosybrown 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rosybrown {
+    100% {top: 0;}
+}
+
+#yellow{
+    background-color: orchid;
+    border-color: orchid;
+    animation: orchid 5s ease-in-out;
+    opacity: 0;
+    animation-iteration-count: infinite;
+}
+
+@keyframes orchid{
+    100% {opacity: 1;}
+}
+
+#green{
+    background-color: palevioletred;
+    border-color: palevioletred;
+    animation: palevioletred 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+    transform: rotateX(180deg);
+}
+
+@keyframes palevioletred {
+    50% {transform: rotate(180deg);}
+    
+}
+
 .heading {
     text-align: center;
     font-size: 2rem;
